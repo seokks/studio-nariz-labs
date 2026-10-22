@@ -19,8 +19,8 @@
             "en": "Click the shortcut field."
           },
           "body": {
-            "ko": "원하는 키 조합을 누르세요. 처음 시작할 때도 이 단축키를 정합니다. 이미 사용 중인 조합이면 다른 조합을 선택하세요.",
-            "en": "Press your preferred key combination. You also choose this during first setup. If another app uses it, choose a different combination."
+            "ko": "설정 → 일반에서 단축키 칸을 누른 뒤 원하는 키 조합을 누르세요. 처음 시작할 때도 이 단축키를 정합니다. 이미 사용 중인 조합이면 다른 조합을 선택하세요.",
+            "en": "In Settings → General, click the shortcut field and press your preferred key combination. You also choose this during first setup. If another app uses it, choose a different combination."
           },
           "result": {
             "ko": "이제 이 조합으로 어디서든 기록을 열 수 있어요.",
@@ -33,10 +33,10 @@
           "action": "settings",
           "image": "settings",
           "crop": [
-            550,
+            35,
             280,
-            640,
-            290
+            1160,
+            135
           ],
           "target": [
             665,
