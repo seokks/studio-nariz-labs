@@ -13,7 +13,7 @@ function figure(item,index){
  svg.setAttribute('viewBox',`${x} ${y} ${w} ${h}`);svg.setAttribute('role','img');svg.setAttribute('aria-label',say(item.title));
  const image=document.createElementNS(ns,'image');image.setAttribute('href','guide/'+file);image.setAttribute('width',item.image==='history'?1920:item.image==='image-history'?2560:item.image.startsWith('editor')?1880:1240);image.setAttribute('height',item.image==='history'?1240:item.image==='image-history'?1600:1504);svg.append(image);
  const rect=document.createElementNS(ns,'rect');Object.entries({x:tx,y:ty,width:tw,height:th,rx:8,class:'highlight'}).forEach(([k,v])=>rect.setAttribute(k,v));svg.append(rect);
- const cx=tx+Math.min(22,tw/2),cy=Math.max(y+22,ty-10);
+ const [cx,cy]=(language==='en'?(item.badgeEn||item.badge):item.badge)||[tx+Math.min(22,tw/2),Math.max(y+22,ty-10)];
  const circle=document.createElementNS(ns,'circle');Object.entries({cx,cy,r:22,class:'badge'}).forEach(([k,v])=>circle.setAttribute(k,v));svg.append(circle);
  const text=document.createElementNS(ns,'text');text.setAttribute('x',cx);text.setAttribute('y',cy+1);text.textContent=index+1;svg.append(text);return svg;
 }
